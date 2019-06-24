@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Yarhl.FileFormat;
 using Yarhl.Media.Text;
 
-namespace Kagutsuchi
+namespace Metatron
 {
     class BMD2PO 
     {

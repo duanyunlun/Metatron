@@ -10,4 +10,8 @@
     <PackageReference Include="Yarhl.Media" Version="3.0.0-alpha02" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\IntegrationTests\IntegrationTests.csproj" />
+  </ItemGroup>
+
 </Project>

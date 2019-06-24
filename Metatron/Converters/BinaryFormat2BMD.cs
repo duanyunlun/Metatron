@@ -1,4 +1,4 @@
-﻿using Kagutsuchi.Formats;
+﻿using Metatron.Formats;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using Yarhl.FileFormat;
 using Yarhl.IO;
 using Yarhl.Media.Text;
 
-namespace Kagutsuchi
+namespace Metatron
 {
     class BinaryFormat2PO : IConverter<BinaryFormat, BMD>
     {

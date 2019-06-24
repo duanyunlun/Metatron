@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Yarhl.FileFormat;
 
-namespace Kagutsuchi.Formats
+namespace Metatron.Formats
 {
     class BMD
     {

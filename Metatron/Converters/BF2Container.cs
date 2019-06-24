@@ -8,9 +8,9 @@ using Yarhl.FileSystem;
 using Yarhl.Media.Text;
 using Yarhl.IO;
 
-namespace Kagutsuchi
+namespace Metatron
 {
-    class BF2Container : IConverter<BinaryFormat, NodeContainerFormat>
+    public class BF2Container : IConverter<BinaryFormat, NodeContainerFormat>
     {
         public NodeContainerFormat Convert(BinaryFormat source)
         {
