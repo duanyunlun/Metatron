@@ -4,7 +4,6 @@ using Yarhl.FileSystem;
 using Metatron;
 using System;
 using Yarhl.IO;
-using Yarhl.FileFormat;
 
 namespace Tests
 {
@@ -21,9 +20,13 @@ namespace Tests
         [Test]
         public void BF2BMDTest()
         {
-            DataReader a = new DataReader(NodeFactory.FromFile(resPath + "e801.bf").TransformWith<BF2Container>().Children[3].Stream);
-            DataReader b = new DataReader(NodeFactory.FromFile(resPath + "e801.bmd").Stream);            
-            Assert.AreEqual(a.ReadBytes((int)a.Stream.Length), b.ReadBytes((int)a.Stream.Length));
+            using (DataStream a = NodeFactory.FromFile(resPath + "e801.bf").TransformWith<BF2Container>().Children[3].Stream)
+            {
+                using (DataStream b = NodeFactory.FromFile(resPath + "e801.bmd").Stream)
+                {
+                    Assert.IsTrue(a.Compare(b));
+                }
+            }
         }
 
         [Test]
