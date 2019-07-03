@@ -10,7 +10,7 @@ using Yarhl.IO;
 
 namespace Metatron
 {
-    class Container2BF : IConverter<NodeContainerFormat, BinaryFormat>
+    public class Container2BF : IConverter<NodeContainerFormat, BinaryFormat>
     {
         public BinaryFormat Convert(NodeContainerFormat source)
         {
